@@ -8,6 +8,7 @@ const tmi = require('tmi.js');
 // const sketch = require('./public/result')
 const pastebin = require('better-pastebin')
 
+//Devkey for pastebin Library
 pastebin.setDevKey("fa78f28b4348c36fbd3230d1e84dca70")
 
 pastebin.login("effeect", "3FCrxehsWgrSpq*", function(success, data) {
@@ -30,12 +31,16 @@ pastebin.login("effeect", "3FCrxehsWgrSpq*", function(success, data) {
     
     pastebin.edit("FxrdEkxf",
                   {
-        contents : "let result = 'stuff'"
+        contents : "let result = 'damnboi'"
+        
     }, function(success,data){
         //Do stuff here
     }
     )
 });
+
+
+// let varTest = "thiss"
 
 // Define configuration options
 // Uses a .env file to read

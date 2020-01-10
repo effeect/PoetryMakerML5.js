@@ -1,22 +1,19 @@
-//ES6 Import for NDJSON API 
-
 // Special thanks to https://learn.ml5js.org/docs/#/reference/charrnn
 
 let rnn = ml5.charRNN("models/input/", modelLoaded);
 
 //Grabs the pastbin
-let resultSample = result;
-
+let word = result;
+let wordTable = [];
 
 // module.exports = resultFunc()
 
 function modelLoaded() {
   rnn.generate(
-    {seed : "The meaning of pizza is"},
+    {seed : result},
     (err, results) => {
       //With this bit of code, I'm exporting the result of the poetry creation
       resultSample = results.sample
-      console.log(resultSample);
     })
   console.log('Model Loaded!');
 }
@@ -25,16 +22,36 @@ function modelLoaded() {
 
 
 function setup() {
-
   createCanvas(1920,1080);
 }
 
-
+function generateWord(word)
+{
+  
+}
 
 function draw() {
+  //Generation algorithm
+  if(word != wordTable)
+  {
+    wordTable.push(word)
+    generation = true
+  }
+  if(generation == true)
+    {
+      rnn.generate(
+        {seed : word},
+        (err, results) => {
+          text(results.sample,500,500);
+          console.log(results)
+          generation = false
+        }
+      )
+    }
   background(0);
   // Text(test.varTest,10,10);
-//  console.log(result)
+  console.log(result)
+
 }
 
 function mousePressed(){
