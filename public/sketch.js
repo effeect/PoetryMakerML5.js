@@ -4,7 +4,9 @@
 
 let rnn = ml5.charRNN("models/input/", modelLoaded);
 
-let resultSample = "stuff";
+//Grabs the pastbin
+let resultSample = result;
+
 
 // module.exports = resultFunc()
 
@@ -32,6 +34,7 @@ function setup() {
 function draw() {
   background(0);
   // Text(test.varTest,10,10);
+//  console.log(result)
 }
 
 function mousePressed(){

@@ -1,0 +1,24 @@
+{
+  "name": "poet",
+  "version": "1.0.0",
+  "description": "For Data and Machine for Creative Practise",
+  "main": "pastebinTest.js",
+  "dependencies": {
+    "better-pastebin": "^0.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/effeect/PoetryMakerML5.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/effeect/PoetryMakerML5.js/issues"
+  },
+  "homepage": "https://github.com/effeect/PoetryMakerML5.js#readme"
+}

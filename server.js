@@ -6,12 +6,36 @@
 
 const tmi = require('tmi.js');
 // const sketch = require('./public/result')
-const pastebin  = require('pastebin-js')
+const pastebin = require('better-pastebin')
 
+pastebin.setDevKey("fa78f28b4348c36fbd3230d1e84dca70")
 
-// let varTest = "thiss"
-
-module.exports = varTest;
+pastebin.login("effeect", "3FCrxehsWgrSpq*", function(success, data) {
+    if(!success) {
+        console.log("Failed (" + data + ")");
+        return false;
+    }
+ 
+    pastebin.create({
+        contents: "test contents",
+        name: "test paste",
+        privacy: "1"
+    }, function(success, data) {
+        if(success) {
+            //data contains the URL of the created paste
+        } else {
+            //data contains an Error object indicating why the creation failed
+        }
+    });
+    
+    pastebin.edit("FxrdEkxf",
+                  {
+        contents : "let result = 'stuff'"
+    }, function(success,data){
+        //Do stuff here
+    }
+    )
+});
 
 // Define configuration options
 // Uses a .env file to read
