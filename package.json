@@ -6,7 +6,7 @@
   "dependencies": {
     "better-pastebin": "^0.4.1",
     "can-ndjson-stream": "^1.0.2",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "ml5": "^0.4.3",
     "pastebin-js": "^1.0.3",
     "tmi.js": "^1.5.0"
