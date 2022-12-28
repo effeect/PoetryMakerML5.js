@@ -1,6 +1,11 @@
-# Twitch-Poetry Maker (With Machine Learning!)
-This is a work-in-progress machine learning project which uses real-time data from Twitch chat and creates new poetry during a "livestream" on the platform.
-## A big problem :
-Since this project requires **Node.js**, and as of **05/03/2020**, there is no Node support for ML5.js which means that this current program uses a public pastebin to allow for the P5.js sketch to access data from the Twitch API which means there is a delay from the user entering to poetry being generated on screen.
+# Poetry-Maker-ML5.js 
+This was a machine learning project originally intedned to be used in conjunction with twitch chat, at the time this was written which was early 2019/2020, the model had been trained however ML5.js didn't support node.js which meant the twitch intregration used some weird workaround to get it to work.
 
-Tensorflow.js has Node.js support whilst ML5.js does not. This means until the ML5 library is updated to have Node support this is the solution that will be used.
+I've commited a change to tempoarily cut off twitch intregration and rework this branch into a more general website to generate poetry.
+
+Note that this branch requires use of live server on VS Code
+
+To-do list :
+- Create a seperate branch to allow use without node.js which is technically possible at the moment.
+- Update the main branch to utilise ml5.js with node.js
+- Tidy up the UI interface and make it useable as of 2022/2023
