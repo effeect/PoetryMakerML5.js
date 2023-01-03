@@ -7,7 +7,7 @@
     "better-pastebin": "^0.4.1",
     "can-ndjson-stream": "^1.0.2",
     "express": "^4.17.3",
-    "ml5": "^0.4.3",
+    "ml5": "^1.0.0",
     "pastebin-js": "^1.0.3",
     "tmi.js": "^1.8.5"
   },
